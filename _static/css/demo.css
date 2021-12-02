@@ -1,0 +1,63 @@
+/* line 16, ../sass/demo.scss */
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+/* line 22, ../sass/demo.scss */
+.container2 {
+  
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 32, ../sass/demo.scss */
+.container2 .gallery a img {
+  float: left;
+  width: 12.5%;
+  height: 140px;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+/* line 46, ../sass/demo.scss */
+.container2 .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
+/* line 57, ../sass/demo.scss */
+
+
+/* line 65, ../sass/demo.scss */
+.align-center {
+  text-align: center;
+}
+
+/*
+     FILE ARCHIVED ON 02:27:08 Nov 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:18:18 Dec 02, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 92.216
+  exclusion.robots: 0.235
+  exclusion.robots.policy: 0.225
+  RedisCDXSource: 2.269
+  esindex: 0.011
+  LoadShardBlock: 67.88 (3)
+  PetaboxLoader3.datanode: 60.389 (4)
+  CDXLines.iter: 18.936 (3)
+  load_resource: 94.342
+  PetaboxLoader3.resolve: 79.37
+*/

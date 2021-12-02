@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box;}
+
+a { text-decoration:none; border:none;}
+img{ border:none}
+ul{ margin: 0; padding: 0; }
+
+body{ font-family: 'Poppins', sans-serif;line-height:1.6; font-size:15px;}
+.container{ width:90%; margin:0 auto; }
+.clear{ clear:both}	
+p{color: #222; line-height: 1.8; font-size: 15px;}
+
+
+.page-section{ padding: 30px 0; }
+
+.title{ text-align: center; color: #f4a314; padding-bottom: 15px; text-transform: uppercase;  }
+.title:after{ border-bottom: 3px solid #9b9a9a; width: 80PX; content:"";display:table; margin:0 auto ;padding-top:15px;}
+.buttton{ color: #fff;  background:#f4a314; padding: 5px 10px; border-radius: 5px;transition: all .5s ease; display: inline-table;
+margin:0 5px;}
+.buttton:hover{ background:#222; color: #fff }
+
+
+/*header*/
+
+header{ height: 138px; background: url(/_static/images/bg.jpg) no-repeat #2982de;box-sizing: border-box; }
+#logo{ float: left; overflow: hidden; width: 25%; box-sizing: border-box;}
+#logo img{ width: 100%; height: 138px; }
+#logo .squ{display: none;}
+#navigation{ float: left; padding: 25px 0px 25px 10px;  box-sizing: border-box; width: 75%;}
+.topnav{ padding-bottom: 20px; overflow: hidden; }
+.topbutton{ float: left; }
+.topbutton ul{ margin: 0; padding: 0; }
+.topbutton ul li{ display: inline; float: left; margin-right: 20px; }
+.topbutton ul li a { background:#fff; padding: 6px; border-radius:5px; float: left;  color: #2982de; border: 2px solid #fff;
+	transition: all .5s ease;}
+.topbutton ul li a:hover{ background: none; color: #fff; border: 2px solid #fff; }
+.toplogo{ float: right; }
+.sidenav, .menu_icon{ display: none; }
+.desktopmenu nav ul {-webkit-font-smoothing:antialiased;list-style: none;margin: 0;padding: 0;width: 100%;}
+.desktopmenu nav li {float: left;margin: 0;padding: 0;position: relative;}
+.desktopmenu nav a {color: #FFF;display: block;font-size: 15px; padding: 0 18px;text-align: center;text-decoration: none;
+-webkit-transition: all .5s ease;-moz-transition: all .5s ease;-ms-transition: all .5s ease;-o-transition: all .5s ease;
+transition: all .5s ease; background:url(/_static/images/cut.png) no-repeat right;}
+.desktopmenu nav .dropdown:after {content:'\25bc';font-size: 11px;}
+.desktopmenu nav .dropdown:hover:after{content:'\25bc';   font-size: 11px;}
+.desktopmenu nav li:hover a , .desktopmenu nav li a.active {color: orange;}
+.desktopmenu nav ul li:first-child a{ padding-left: 0px; }
+.desktopmenu nav ul li:last-child a{ padding-right: 0px; background:none; }
+
+.desktopmenu nav li ul {float: left;left: 15px;opacity: 0;position: absolute;top: 30px;visibility: hidden;z-index:40; background:#fff; 
+width: 200px;
+-webkit-transition: all .6s ease;-moz-transition: all .6s ease;-ms-transition: all .6s ease;-o-transition: all .6s ease;
+transition: all .6s ease;
+}
+.desktopmenu nav li:hover ul {opacity: 1;visibility: visible; top: 30px;}
+.desktopmenu nav li ul li {float: left;width: 100%;}
+.desktopmenu nav li ul a{text-align: left; padding: 0px 15px 10px 15px; background:none; font-size: 15px; float: left;}
+.desktopmenu nav li ul a:hover {color: black;}
+
+.desktopmenu nav li li:first-child a{padding:10px 15px 10px 15px; }
+.desktopmenu nav li li:last-child a{ padding:0px 15px 10px 15px }
+
+/* Clearfix */
+.cf:after, .cf:before {content:"";display:table;}
+.cf:after {clear:both;}
+.cf{zoom:1;}
+
+
+/*banner*/
+#banner{ background: url(/_static/images/banner.jpg) no-repeat center center; background-size: cover; height: 400px; text-align: center; 
+	color: #fff ; position: relative;}
+#banner:after{position: absolute; top: 0; z-index: 1; left:0;width:100%;background:#000; height: 100%; 
+	opacity: .7; content:"";display:block; }
+.banner_wrapper { position: relative;z-index: 2; height: 400px; padding-top: 30px;}
+.banner_wrapper h2{color: #fff; font-size: 30px; line-height: 1.3; padding-bottom: 10px;}
+.banner_wrapper img{display: block;  margin: 0 auto; padding-bottom: 10px}
+.banner_wrapper h3{ color: #f39d05; line-height: 1.4;  padding-bottom: 10px;font-size: 24px;}
+.banner_button{ overflow: hidden; width: 100%; margin: 0 auto; padding-bottom: 10px;}
+.banner_button .buttton{ width: 100px }
+
+.event {position: absolute;bottom: 0; overflow: hidden;  width: 100%;  }
+.event a{ display: inline-table; background:#2982de; padding:10px;  text-align: left;
+	font-weight: normal;font-size: 16px; line-height: 1.4; width: 290px; overflow: hidden; margin:0 5px;}
+.event a span img{float: left; padding-bottom: 0px; padding-right: 15px;}
+
+
+#banner2{ background: url(/_static/images/banner2.jpg) no-repeat center center; background-size: cover; height: 200px; text-align: center; 
+	color: #fff ; position: relative; line-height: 200px; vertical-align: middle;}
+#banner2:after{position: absolute; top: 0; z-index: 1; left:0;width:100%;background:#000; height: 100%; 
+	opacity: .3; content:"";display:block; }
+#banner2 .banner_wrapper { height: 100%; padding-top: 0px; }
+#banner2 .banner_wrapper h2{color: #fff; font-size: 30px; line-height: 30px; padding-bottom: 0px; padding-top: 90px;}
+
+/*Home - about*/
+
+#about p{ text-align: center; }
+
+
+/*home - cta */
+#cta {background:#2982de; text-align: center;}
+#cta p{ text-align: center;  color: #fff; padding-bottom: 15px;}
+#cta .title{ color: #fff; }
+#cta .title:after{border-color:#9fc0e5 }
+
+/*home - gallery*/
+#gallery.page-section{padding-bottom: 0px}
+
+/*home - sponsors*/
+#sponsors{text-align: center;}
+#sponsors img{width: 150px; margin-top: 10px;}
+
+/*home - speakers*/
+#speakers{overflow: hidden; text-align: center;}
+#speakers.page-section{padding-bottom: 0px}
+#speakers ul{padding-top: 10px; overflow: hidden; text-align: center; width: 100%}
+#speakers ul li { float: left; display: inline-block; width: 25%; padding: 0 1%;}
+#speakers ul li  a img{ width: 100% }
+.speak{ background:#f9f9f9; text-align: left; padding: 10px 15px }
+.speak h3{ color: #333333; padding-bottom: 5PX; }
+.speak h4{ color: #919191 }
+
+
+/*footer*/
+footer#topfooter{ background:#000; overflow: hidden; }
+footer#topfooter ul li{ width: 33.3%; padding-right: 20px; box-sizing: border-box; color: #fff; float: left; display: inline-block;}
+footer#topfooter ul li:last-child{padding-right: 0px}
+footer#topfooter ul li img{ display: block; margin-bottom: 10px; }
+footer#topfooter p{color: #fff; }
+footer#topfooter ul li h3{ font-size: 24px; padding-bottom: 10px; font-weight: normal; }
+footer#topfooter li li{ width: 100%; float: left; }
+footer#topfooter li li a{ color: #fff; float: left; display: block; width: 100%; padding-bottom: 5px;  }
+footer#topfooter li li a:hover{text-decoration: underline;}
+footer#bottomfooter{ background:#222222; padding: 15px 0; text-align: center;  color: #fff;}
+footer#bottomfooter p{color: #fff; font-size: 12px;}
+
+
+/*-----inner pages----*/
+#page .container{ overflow: hidden; }
+#page p{ text-align: left; color: #000; padding-bottom: 15px; }
+#page a{ color: #000 }
+.primary{width: 100%; float: left; overflow: hidden;  box-sizing: border-box;}
+.secondary{ width: 50%; float: right; margin-left: 3%; background:#2982de; padding:20px; box-sizing: border-box; overflow: hidden; 
+	border-radius: 10px;}
+
+form.papers{ float: left; width: 100%; overflow: hidden; }
+.papers p{width: 100%; padding-bottom:15px; overflow: hidden; color: #fff !important;}
+.papers p label{ float: left; width: 100%; display: block; line-height:18px; color: #fff; font-size: 16px; margin-bottom: 10px;}
+.papers p input[type="text"], input[type="email"], input[type="url"], input[type="password"], 
+input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
+ input[type="month"], input[type="week"], 
+input[type="time"], input[type="datetime"], input[type="datetime-local"], 
+input[type="color"], input[type="file"],select, textarea
+{ width:100%; height: 50px; line-height: 18px; padding: 10px; font-family: 'Poppins', sans-serif; font-size: 14px;
+background-color: #fff; border-radius: 6px; box-sizing: border-box; outline:none; transition: border-color 1s ease,box-shadow 1s ease;
+ display: block;   border:none; border-bottom: 2px solid #222;vertical-align: middle; }
+ textarea {width: 100%; height: 100px;}
+ select{ width: 50% }
+ 	 .papers p input.address{ height: 100px;  }
+ 	 .papers p input:hover,.papers p input:focus{background:#e1e2e3;}
+ 	 .papers p span{float: left;}
+ 	 input[type="radio"]{ float: left; margin:7px 10px 0 10px; }
+
+input[type="submit"]{ display:block;color: #fff;  background:#f4a314; padding: 10px 15px; border-radius: 5px;transition: all .5s ease; 
+border: none; outline: none; font-size: 16px; cursor: pointer;
+}
+ .papers p input[type="submit"]:hover{ background:#222; color: #fff }
+.primary p{padding-bottom: 15px;}
+.primary h2{ color: green; padding-bottom: 10px; font-size: 24px; font-family: 'Roboto', sans-serif; font-style: italic;}
+.primary h3{ color: blue; padding-bottom: 5px; }
+.primary h4{color: red; padding-bottom: 5px;}
+.primary h5{ color: green; padding-bottom: 10px; font-size: 18px; font-family: 'Roboto', sans-serif; }
+ .primary ul{  overflow: hidden; box-sizing: border-box; width: 100% ;  margin-bottom: 2px;background: #f4a314; 
+ 	display: table;  }
+ .primary ul.heading{ background: #000; }
+ .primary ul.heading li{ color: #fff; vertical-align: middle; }
+ .primary ul li{  display: table-cell;width: 33.3%; box-sizing: border-box; font-size: 15px; padding:5px 10px; 
+ 	border-right:2px solid #fff;vertical-align: middle;}
+    .primary a{text-decoration: underline; color: blue !important;}
+
+
+.patron,.commit{overflow: hidden; text-align: center;}
+.patron ul, .commit ul{overflow: hidden; text-align: center; width: 100%}
+.patron ul li  { float: left; display: inline-block; width: 33%; padding: 0 1%;}
+.commit ul li  { display: inline-block; width: 25%; padding: 0 1%; margin-bottom: 20px;}
+.commit ul.chief li  { float: none;}
+.heading2{background:#e7e4e4;  color: #333333;  text-align: center; font-size: 18px;
+ line-height: 18px; padding: 16px 5px;  margin: 0 auto}
+.heading2.large{ font-size: 16px; }
+.heading2.full{width: 73.5%;}
+.patron ul li img, .commit ul li img{ width: 100%; height: auto; }
+.speak{ background:#e7e4e4; text-align: left; padding: 10px 15px; }
+.patron .speak{height: 110px; }
+.speak h3{ color: #333333; text-align: center;}
+.speak h4{ color: #484848; text-align: center; }
+
+.members{ overflow: hidden; width: 100%; }
+.members h2{ background: #000; color: #fff ; font-size: 18px; text-align: center; padding: 10px 0;}
+.memlt{width: 48%; float: left; background: #f4a314; margin: 0 1%; }
+.memrt{ width: 48%; float: right; background: #f4a314; margin: 0 1%; }
+.members ul{ padding: 15px; overflow: hidden; width: 100% }
+.members ul li{float: left;  display: inline-block; width: 100%}
+
+ul.cfp{ float: left;overflow: hidden; width: 100%; }
+ul.cfp li{ float: left; width: 32% ; background: #f4a314; margin-right:1%; }
+ul.cfp li h4{ padding: 2% 3%; background: #000; color: #fff; }
+ul.cfp li:last-child{margin-right:0;}
+ul.cfp li ul{ padding: 3%; width: 100%;  overflow: hidden;}
+ul.cfp li ul li{width: 100%; list-style-type: circle; list-style-position: inside;}
+
+.keydates{ border: 5px solid #000; width: 70%; margin:0 auto; overflow: hidden;}
+.keydates ul{ width: 100%; overflow: hidden; display: table;}
+.keydates ul li{overflow: hidden; display: table-cell; width: 50%; background: #f4a314; padding: 1% 0 1% 3%; vertical-align: middle;
+ border:2px solid #fff; }
+
+.places{  background: #f4a314;  padding: 2%; width: 100%; overflow: hidden; margin-bottom: 2% }
+.places h3{ padding-bottom: 10px; }
+ .places img{ float: left; padding:0% 2% 1% 0; width: 240px; }
+
+ .contact{width: 100%; overflow: hidden; }
+ .conlt,.conrt{ width: 50%; float: left;height: 300px; }
+ .conlt{ background: #f4a314;  padding: 3%; }
+
+.venue{margin-bottom: 20px; overflow: hidden;}
+
+.tab {
+    float: left; width: 30%;border-right:2px solid #fff; 
+}
+
+/* Style the buttons inside the tab */
+.tab button {display: block;background-color: #000; inherit;color: #fff;
+    padding: 3%;width: 100%;border: none;outline: none;text-align: left;cursor: pointer;
+    transition: 0.3s;font-size: 15px;font-family: 'Poppins', sans-serif; border-bottom: 2px solid #fff;font-weight: normal;
+    height: 95px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background: #f4a314;  color: #000;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background: #f4a314;  color: #000; }
+
+/* Style the tab content */
+.tabcontent {
+    float: left;padding: 3%;background: #f4a314;  width: 70%; border-left: none; height: 380px;
+    border-bottom: 2px solid #fff;
+}
+.tabcontent p{ font-size: 15px !important;}
+.tabcontent h3{ font-size: 17px; }
+
+.drivers{ overflow: hidden; width: 100%; }
+.drivers h2{ background: #000; color: #fff ; font-size: 18px; text-align: center; padding: 10px 0;}
+.drilt{width: 49%; float: left; background: #f4a314; margin-right: 1%; padding: 2%; height: 310px;}
+.drirt{ width: 49%; float: right; background: #f4a314; margin-left: 1%; padding: 2%; height: 310px; }
+
+.hotels a{ font-weight: bold; }
+.hotels a:hover{text-decoration: underline;}
+
+/*
+     FILE ARCHIVED ON 22:38:14 Nov 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:17:47 Dec 02, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 812.572
+  exclusion.robots: 0.182
+  exclusion.robots.policy: 0.176
+  cdx.remote: 0.061
+  esindex: 0.008
+  LoadShardBlock: 131.433 (3)
+  PetaboxLoader3.datanode: 101.672 (4)
+  CDXLines.iter: 15.182 (3)
+  load_resource: 114.852
+  PetaboxLoader3.resolve: 60.791
+*/
