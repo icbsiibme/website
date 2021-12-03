@@ -176,12 +176,12 @@ border: none; outline: none; font-size: 16px; cursor: pointer;
 .primary h3{ color: blue; padding-bottom: 5px; }
 .primary h4{color: red; padding-bottom: 5px;}
 .primary h5{ color: green; padding-bottom: 10px; font-size: 18px; font-family: 'Roboto', sans-serif; }
- .primary ul{  overflow: hidden; box-sizing: border-box; width: 100% ;  margin-bottom: 2px;background: #f4a314; 
- 	display: table;  }
- .primary ul.heading{ background: #000; }
- .primary ul.heading li{ color: #fff; vertical-align: middle; }
- .primary ul li{  display: table-cell;width: 33.3%; box-sizing: border-box; font-size: 15px; padding:5px 10px; 
- 	border-right:2px solid #fff;vertical-align: middle;}
+ .primary ul{  overflow: hidden; box-sizing: border-box; width: 100% ;  margin-bottom: 2px;
+ 	  }
+ .primary ul.heading{ background: #000; list-style: disc; }
+ .primary ul.heading li{ color: #fff; vertical-align: middle; list-style: disc;}
+ .primary ul li{ box-sizing: border-box; font-size: 15px; padding:5px 10px; 
+ 	border-right:2px solid #fff;vertical-align: middle; list-style: disc;}
     .primary a{text-decoration: underline; color: blue !important;}
 
 
@@ -207,12 +207,12 @@ border: none; outline: none; font-size: 16px; cursor: pointer;
 .members ul{ padding: 15px; overflow: hidden; width: 100% }
 .members ul li{float: left;  display: inline-block; width: 100%}
 
-ul.cfp{ float: left;overflow: hidden; width: 100%; }
-ul.cfp li{ float: left; width: 32% ; background: #f4a314; margin-right:1%; }
+ul.cfp{ float: left;overflow: hidden; width: 100%; list-style: none; }
+ul.cfp li{ float: left; width: 32% ; background: #f4a314; margin-right:1%; margin-top: 1rem; }
 ul.cfp li h4{ padding: 2% 3%; background: #000; color: #fff; }
 ul.cfp li:last-child{margin-right:0;}
-ul.cfp li ul{ padding: 3%; width: 100%;  overflow: hidden;}
-ul.cfp li ul li{width: 100%; list-style-type: circle; list-style-position: inside;}
+ul.cfp li ul{ padding: 3%; width: 100%;  overflow: hidden; list-style: none;}
+ul.cfp li ul li{width: 100%; list-style-type: circle; list-style-position: inside; list-style: none;}
 
 .keydates{ border: 5px solid #000; width: 70%; margin:0 auto; overflow: hidden;}
 .keydates ul{ width: 100%; overflow: hidden; display: table;}
