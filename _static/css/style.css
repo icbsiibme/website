@@ -74,7 +74,7 @@ transition: all .6s ease;
 
 
 /*banner*/
-#banner{ background: url(/_static/images/banner.jpg) no-repeat center center; background-size: cover; height: 400px; text-align: center; 
+#banner{ background: url(/_static/images/banner.jpg) no-repeat center center; background-size: cover; height: 420px; text-align: center; 
 	color: #fff ; position: relative;}
 #banner:after{position: absolute; top: 0; z-index: 1; left:0;width:100%;background:#000; height: 100%; 
 	opacity: .7; content:"";display:block; }
@@ -85,9 +85,9 @@ transition: all .6s ease;
 .banner_button{ overflow: hidden; width: 100%; margin: 0 auto; padding-bottom: 10px;}
 .banner_button .buttton{ width: 100px }
 
-.event {position: absolute;bottom: 0; overflow: hidden;  width: 100%;  }
+.event {position: absolute;bottom: 0; overflow: hidden;  width: 100%; margin-top: 10px;  }
 .event a{ display: inline-table; background:#2982de; padding:10px;  text-align: left;
-	font-weight: normal;font-size: 16px; line-height: 1.4; width: 290px; overflow: hidden; margin:0 5px;}
+	font-weight: normal;font-size: 16px; line-height: 1.4; width: 310px; overflow: hidden; margin:0 5px;}
 .event a span img{float: left; padding-bottom: 0px; padding-right: 15px;}
 
 
@@ -194,7 +194,7 @@ border: none; outline: none; font-size: 16px; cursor: pointer;
  line-height: 18px; padding: 16px 5px;  margin: 0 auto}
 .heading2.large{ font-size: 16px; }
 .heading2.full{width: 73.5%;}
-.patron ul li img, .commit ul li img{ width: 100%; height: auto; }
+.patron ul li img, .commit ul li img{ width: 100%; height: 400px; }
 .speak{ background:#e7e4e4; text-align: left; padding: 10px 15px; }
 .patron .speak{height: 110px; }
 .speak h3{ color: #333333; text-align: center;}
