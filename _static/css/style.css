@@ -87,7 +87,7 @@ transition: all .6s ease;
 .banner_wrapper h3{ color: #f39d05; line-height: 1.4;  padding-bottom: 10px;font-size: 24px;}
 .banner_button{ overflow: hidden; width: 100%; margin: 0 auto; padding-bottom: 10px;}
 .banner_button .buttton{ width: 100px } 
-.banner_button .buttton1{ width: 300px } 
+
 
 
 .event {position: absolute;bottom: 0; overflow: hidden;  width: 100%; margin-top: 10px;  }
