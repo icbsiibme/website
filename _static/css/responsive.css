@@ -296,7 +296,7 @@ footer#topfooter ul li li{padding-bottom: 0px}
 
 
 @media(max-width:400px){
-.topbutton ul li {margin-right: 10px;}
+.topbutton ul li {margin: 10px;}
 .topbutton ul li a {padding: 2px; font-size: 12px;}
 .toplogo {margin-right: 10px; width:20%;}
 .toplogo img{ width: 100% }
