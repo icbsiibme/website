@@ -116,7 +116,7 @@ header{height: 100px;}
 #logo{width: 35%;}
 #logo img{ height: 100px; }
 #navigation{ width: 65%; padding: 35px 0px 0px 10px;  }
-.topbutton ul li{ margin-right: 15px; }
+.topbutton ul li{ margin: 15px; }
 .topbutton ul li a {padding: 4px; font-size: 14px;}
 .toplogo img{ width: 85% }
 .menu_icon img{ width: 85% }
@@ -253,7 +253,7 @@ footer#topfooter ul li li{padding-bottom: 0px}
 }
 
 @media(max-width:500px){
-	
+.topbutton ul li {margin: 10px;}
 .topbutton ul li a {padding: 4px; font-size: 13px;}
 .toplogo img{ width: 75% }
 .menu_icon img{ width: 85% }
@@ -321,7 +321,7 @@ ul.cfp li ul li{ font-size: 14px; }
 }
 
 @media(max-width:320px){
-.topbutton ul li {margin-right: 5px;}
+.topbutton ul li {margin: 5px;}
 .topbutton ul li a {padding: 2px; font-size: 10px;}
 .toplogo {margin-right: 5px; width:20%;}
 .toplogo img{ width: 100% }
