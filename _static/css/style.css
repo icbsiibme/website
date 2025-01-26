@@ -44,6 +44,18 @@ header{ height: 138px; background: url(/_static/images/bg.jpg) no-repeat #2982de
 .topbutton ul li a { background:#fff; padding: 6px; border-radius:5px; float: left;  color: #2982de; border: 2px solid #fff;
 	transition: all .5s ease;}
 .topbutton ul li a:hover{ background: none; color: #fff; border: 2px solid #fff; }
+.topbuttonspl{ background:gold !important;
+     padding: 6px;
+      border-radius:5px;
+       float: left;
+         color: white !important;
+          border: 2px solid gold !important;
+	transition: all .5s ease;}
+.topbuttonspl:hover{ background: none !important;
+     color: #fff !important;
+      border: 2px solid gold !important;
+     }
+
 .toplogo{ float: right; }
 .sidenav, .menu_icon{ display: none; }
 .desktopmenu nav ul {-webkit-font-smoothing:antialiased;list-style: none;margin: 0;padding: 0;width: 100%;}
