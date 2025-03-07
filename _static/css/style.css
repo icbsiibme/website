@@ -143,6 +143,85 @@ transition: all .6s ease;
 .speak h3{ color: #333333; padding-bottom: 5PX; }
 .speak h4{ color: #919191 }
 
+/* From Uiverse.io by Codewithvinay */ 
+.card-for-speakers {
+    width: 190px;
+    height: 254px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+   }
+   .speaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speaker-card {
+    background: #f39d05;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    text-align: center;
+    width: 100%; /* Default to full width */
+    max-width: 270px; /* Limit max width */
+    transition: 0.5s;
+}
+/*.speaker-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px #0058af;
+
+  }*/
+  .speaker-card:hover {
+    transform: translateY(-2px);
+    background-color: #222222;
+    box-shadow: 0px 10px 10px #0058af;
+  }
+/* Image styling */
+.speaker-card a img {
+    border-radius: 8px;
+    width: 250px; /* Set a fixed width */
+    height: 270px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the area while maintaining aspect ratio */
+}
+.speaker-info h3 {
+    margin: 10px 0 5px;
+    color: #1c74cc;
+}
+
+.speaker-info h4 {
+    font-size: 14px;
+    color: #dadada;
+}
+
+/* Responsive Grid */
+@media (min-width: 992px) { /* Large screens (3 cards per row) */
+    .speaker-list {
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .speaker-card {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* Medium screens (2 cards per row) */
+    .speaker-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 767px) { /* Small screens (1 card per row) */
+    .speaker-card {
+        flex: 1 1 100%;
+    }
+}
+
 
 /*footer*/
 footer#topfooter{ background:#000; overflow: hidden; }
