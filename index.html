@@ -117,6 +117,10 @@
         });
       });
     </script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
   </head>
 
   <body>
@@ -132,23 +136,13 @@
           <div class="topnav">
             <div class="topbutton">
               <ul>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="register.html">Paper Presentation</a></li>
                 <li><a href="https://forms.gle/NXhVK3mRSHYRn9A29" class="topbuttonspl" target="_blank">Poster Presentation</a></li>
               </ul>
             </div>
             <!--end of topbutton-->
 
-            <div class="toplogo" style=" display: flex; flex-direction:row; justify-content: center;">
-              <a href="http://www.ssn.edu.in/" target="_blank"
-                ><img style="width: 100px;"  src="_static/images/ssn.png"
-              /></a>
-              
-              <a style=" display: flex; flex-direction:column; justify-content: center; margin-left: 20px;"><img style="width: 100px;" src="_static\images\Delsys white.png"
-              /></a>
-              
-              <a style=" display: flex; flex-direction:column; justify-content: center; margin-left: 20px;"><img style="width: 100px;" src="_static\images\SERB white logo.png"
-              /></a>
-            </div>
+            
             
             <!--end of toplogo-->
           </div>
@@ -341,7 +335,7 @@
       <!--end of container-->
     </header>
     <!-- end of header-->
-
+    
     <section id="banner">
       <div class="container">
         <div class="banner_wrapper">
@@ -378,6 +372,28 @@
               SSNCE
             </a>
           </div>
+          <div class="toplogo1">
+            <a>
+                <img src="_static/images/IEEE LOGO Whitw.png" alt="IEEE">
+            </a>
+            <a>
+                <img src="_static/images/IEEE EMBS White Logo.png" alt="IEEE EMBS">
+            </a>
+            <a>
+                <img src="_static/images/Delsys white.png" alt="Delsys">
+            </a>
+            <a>
+                <img src="_static/images/SERB white logo.png" alt="SERB">
+            </a>
+            <a>
+                <img src="_static/images/sdg3whitelogo2.jpg"  alt="SDG3">
+            </a>
+            <a href="http://www.ssn.edu.in/" target="_blank">
+                <img src="_static/images/ssn.png" alt="SSN">
+            </a>
+        </div>
+        
+        
         </div>
       </div>
     </section>
@@ -697,12 +713,27 @@
       </div>
     </section>
     end of speakers-->
-
+    
     <section class="page-section" id="gallery">
       <h2 class="title">Our Gallery</h2>
 
       <div class="container2">
         <div class="gallery">
+          <!--<a
+         data-fancybox="gallery"
+         data-src="_static/images/thumbs/image(1).jpg"
+         data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+         >
+        <img src="_static/images/thumbs/image(1).jpg" />
+      </a>
+
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
+        <img src="https://lipsum.app/id/3/200x150" />
+      </a>
+
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
+        <img src="https://lipsum.app/id/4/200x150" />
+      </a>-->
           <a href="/_static/images/large/image(1).jpg"
             ><img alt="" src="_static/images/thumbs/image(1).jpg" title=""
           /></a>
@@ -888,16 +919,20 @@
     <!-- end of gallery-->
     <section class="page-section" id="sponsors">
       <div class="container">
-        <br/>
-        <br/>
-        <h2 class="title">Our Sponsors </h2>
-        <p> <img src="_static/images/ssn-logo.png" /> </p>
-        <p> <img src="_static/images/IEEE_MADRAS_LOGO.png" /> </p>
-        <p> <img src="_static/images/ieee-embs.png" /> </p>
-        <p> <img style="width: 200px;" src="_static\images\Delsys.png" /> </p>
-        <p> <img style="width: 200px;" src="_static\images\SERB Logo.png" /> </p>
+          <h2 class="title">Our Sponsors</h2>
+          <div class="sponsor-logos">
+              <img src="_static/images/ssn-logo.png" alt="SSN College of Engineering Logo" />
+              <img src="_static/images/IEEE_MADRAS_LOGO.png" alt="IEEE Madras Logo" />
+              <img src="_static/images/ieee-embs.png" alt="IEEE EMBS Logo" />
+              <img src="_static/images/Delsys.png" alt="Delsys Logo" class="delsys-logo" />
+              <img src="_static/images/SERB Logo.png" alt="SERB Logo" class="serb-logo" />
+              <img src="_static/images/sdg3logo.jpg" alt="SDG 3 Logo" class="sdg3-logo" />
+          </div>
       </div>
-    </section>
+  </section>
+
+
+  
     <!-- end of sponsors-->
     <script>
       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -966,5 +1001,11 @@
         <p>Copyright &copy; 2025 SSN - Department of Biomedical Engineering</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
   </body>
 </html>
