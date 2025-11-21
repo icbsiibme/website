@@ -400,7 +400,7 @@ ul.cfp li ul li{width: 100%; list-style-type: circle; list-style-position: insid
 
 .keydates{ border: 5px solid #000; width: 70%; margin:0 auto; overflow: hidden;}
 .keydates ul{ width: 100%; overflow: hidden; display: table;}
-.keydates ul li{overflow: hidden; display: table-cell; width: 50%; background: #f4a314; padding: 1% 0 1% 3%; vertical-align: middle;
+.keydates ul li{overflow: hidden; display: table-cell; width: 50%; background: #ffb217; padding: 1% 0 1% 3%; vertical-align: middle;
  border:2px solid #fff; }
 
 .places{  background: #f4a314;  padding: 2%; width: 100%; overflow: hidden; margin-bottom: 2% }
