@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+  position: relative;
+  height: 30vh;
+  background: url("../../images/banner2.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+/* Common Container Styles */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.primary h1.alert {
+  color: #b71c1c;
+  background: #ffebee;
+  border: 2px solid #b71c1c;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.primary h3 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.guidelines {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.guidelines li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Fee Table Styling */
+.fee-table, .bank-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.fee-table th, .fee-table td,
+.bank-table th, .bank-table td {
+  border: 1px solid #333;
+  padding: 12px 15px;
+  font-weight: 600;
+}
+
+.fee-table th, .bank-table th {
+  background-color: #f4a314;
+  color: #fff;
+}
+
+.fee-table td, .bank-table td {
+  background-color: #fff3e0;
+}
+
+.fee-table tr:nth-child(even), .bank-table tr:nth-child(even) {
+  background-color: #ffe0b2;
+}
+
+/* Payment Link Styling */
+.payment-link a {
+  font-size: 1.2rem;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.payment-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .fee-table, .bank-table, .fee-table th, .fee-table td, .bank-table th, .bank-table td {
+    font-size: 0.9rem;
+  }
+
+  .guidelines li {
+    font-size: 0.95rem;
+  }
+}

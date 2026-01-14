@@ -1,0 +1,291 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+  position: relative;
+  height: 30vh;
+  background: url("../../images/banner2.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+/* =========================
+   PAGE CONTENT
+========================= */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px 40px;
+}
+
+.content p {
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.7;
+  padding: 0 40px;
+}
+
+/* =========================
+   FADE-IN ANIMATION
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   COMMITTEE SECTION
+========================= */
+.comm-list {
+  padding: 60px 8%;
+  background: #ffffff;
+}
+
+/* Each committee block */
+.comm-section {
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  text-align: center;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Heading */
+.comm-section h2 {
+  font-size: 28px;
+  color: #2D82DF;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.comm-section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #e2de00;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* =========================
+   MEMBER GRID
+========================= */
+.comm-mem-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* =========================
+   MEMBER CARD
+========================= */
+.mem-info {
+  background: #ffffff;
+  padding: 22px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+  transition: all 0.35s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Stagger animation */
+.mem-info:nth-child(1) { animation-delay: 0.1s; }
+.mem-info:nth-child(2) { animation-delay: 0.2s; }
+.mem-info:nth-child(3) { animation-delay: 0.3s; }
+.mem-info:nth-child(4) { animation-delay: 0.4s; }
+.mem-info:nth-child(5) { animation-delay: 0.5s; }
+.mem-info:nth-child(6) { animation-delay: 0.6s; }
+.mem-info:nth-child(7) { animation-delay: 0.7s; }
+
+/* =========================
+   MEMBER IMAGE
+========================= */
+.mem-info img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid #2D82DF;
+  margin-bottom: 14px;
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+/* =========================
+   MEMBER NAME
+========================= */
+.mem-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.35s ease;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+.mem-info:hover {
+  background-color: #2D82DF;
+  transform: translateY(-10px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.mem-info:hover img {
+  transform: scale(1.06);
+  border-color: #ffffff;
+}
+
+.mem-info:hover h3 {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 30px;
+  }
+
+  .content p {
+    padding: 0 20px;
+  }
+
+  .mem-info img {
+    width: 150px;
+    height: 190px;
+  }
+}
+
+/* Base section styling */
+.members-section {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.members-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.members-section h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #004080;
+  margin-bottom: 50px;
+}
+
+/* Grid layout for committees */
+.members-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Each committee */
+.committee {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.committee h2 {
+  font-size: 1.6rem;
+  color: #004080;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #004080;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Member cards */
+.member-card {
+  background-color: #f1f8ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.member-affiliation {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive: stack columns on smaller screens */
+@media (max-width: 768px) {
+  .members-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .committee {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .comm-mem-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mem-info {
+    max-width: 260px;
+  }
+
+  .mem-info img {
+    width: 160px;
+    height: 200px;
+  }
+}

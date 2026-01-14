@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+  position: relative;
+  height: 30vh;
+  background: url("../../images/banner2.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+/* ---------- Submission Section ---------- */
+
+.submission-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.submission-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.submission-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.submit-btn {
+  display: inline-block;
+  margin: 20px 0 30px;
+  padding: 14px 28px;
+  background-color: #004aad;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #003580;
+  transform: translateY(-2px);
+}
+
+.template-section {
+  margin-top: 10px;
+}
+
+.template-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004aad;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.template-link:hover {
+  text-decoration: underline;
+}
+
+.note-text {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d32f2f;
+}

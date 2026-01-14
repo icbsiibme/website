@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+  position: relative;
+  height: 30vh;
+  background: url("../../images/banner2.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+/* ===============================
+   Key Dates Section
+   =============================== */
+
+.page-section {
+  padding: 60px 0;
+  background-color: #f8f9fb;
+}
+
+.page-section .container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.keydates {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual Date Rows */
+.keydates ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.keydates ul:last-child {
+  border-bottom: none;
+}
+
+/* Left Text */
+.keydates ul li:first-child {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Right Date */
+.keydates ul li:last-child {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #000;
+  text-align: right;
+}
+
+/* Strike-through Date */
+.keydates s {
+  font-weight: 600;
+}
+
+/* Extended Date Highlight */
+.keydates span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .keydates {
+    padding: 25px 20px;
+  }
+
+  .keydates ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .keydates ul li:last-child {
+    margin-top: 8px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+  position: relative;
+  height: 30vh;
+  background: url("../../images/banner2.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+/* ===============================
+   Tracks / List Section Styling
+   =============================== */
+
+section.list {
+  background-color: #f9fafb;
+  padding: 60px 0;
+}
+
+section.list .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Intro Paragraph */
+section.list p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+/* Track List Grid */
+.track-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-list > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Track Card */
+.track-list > ul > li {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track-list > ul > li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* Track Title */
+.track-list h4 {
+  font-size: 1.15rem;
+  color: #0b4f8a;
+  margin-bottom: 15px;
+  border-left: 4px solid #f4a314;
+  padding-left: 10px;
+}
+
+/* Sub Tracks Header */
+.track-list h5 {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 15px 0 8px;
+  font-weight: 600;
+}
+
+/* Sub Track List */
+.track-list li ul {
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 2px dashed #ddd;
+}
+
+.track-list li ul li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #555;
+  position: relative;
+}
+
+/* Bullet Style */
+.track-list li ul li::before {
+  content: "▸";
+  position: absolute;
+  left: -15px;
+  color: #f4a314;
+  font-weight: bold;
+}
+
+/* ===============================
+   Responsive Adjustments
+   =============================== */
+@media (max-width: 768px) {
+  section.list {
+    padding: 40px 0;
+  }
+
+  .track-list > ul {
+    grid-template-columns: 1fr;
+  }
+
+  .track-list h4 {
+    font-size: 1.05rem;
+  }
+
+  section.list p {
+    font-size: 1rem;
+  }
+}
