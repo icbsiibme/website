@@ -288,3 +288,52 @@
 .sponsor-logos img:hover {
     transform: scale(1.05);
 }
+
+
+/* Section wrapper */
+.news-section {
+  width: 100%;
+  background-color: #0f172a; /* dark blue-gray */
+  position: relative;
+  z-index: 10;
+}
+
+/* Ticker container (bigger bar) */
+.news-ticker {
+  width: 100%;
+  height: 56px;                 /* increased height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Moving content (slower animation) */
+.ticker-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: ticker-scroll 40s linear infinite;  /* slower */
+}
+
+/* Text styling (slightly bigger text) */
+.ticker-wrapper span {
+  font-size: 17px;              /* increased font size */
+  font-weight: 500;
+  color: #f8fafc;
+}
+
+/* Smooth animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause animation on hover */
+.news-ticker:hover .ticker-wrapper {
+  animation-play-state: paused;
+}
