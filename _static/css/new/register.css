@@ -105,6 +105,44 @@ body {
   text-decoration: underline;
 }
 
+
+.registration-actions {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.register-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.register-btn:hover {
+  background-color: #1e40af;
+}
+
+.pay-btn {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+.pay-btn:hover {
+  background-color: #166534;
+}
+
 /* Responsive Table */
 @media (max-width: 768px) {
   .fee-table, .bank-table, .fee-table th, .fee-table td, .bank-table th, .bank-table td {
