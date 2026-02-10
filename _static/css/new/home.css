@@ -1,15 +1,19 @@
-/* -------------------- HOME PAGE CSS -------------------- */
+/* =====================================================
+   HOME PAGE – FINAL CSS
+   ===================================================== */
 
-/* Hero Section */
+
+/* ================= HERO SECTION ================= */
+
 .hero-section {
   position: relative;
   height: 70vh;
-  min-height: 520px;                 /* 🔥 prevents cut-off */
-  background: url("../../images/banner.jpg") center/cover no-repeat;
+  min-height: 520px;
+  background: url("../../images/banner.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #ffffff;
   text-align: center;
   overflow: hidden;
 }
@@ -21,23 +25,22 @@
   background: rgba(0, 0, 0, 0.65);
 }
 
-/* Content */
+/* Hero content */
 .hero-content {
   position: relative;
   max-width: 1000px;
   padding: 20px;
   z-index: 1;
 
-  /* 🔥 KEY FIX */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;              /* balanced vertical spacing */
+  gap: 18px;
 }
 
 /* Headings */
 .hero-content h1 {
-  font-size: 32px;        /* slightly reduced */
+  font-size: 32px;
   line-height: 1.35;
 }
 
@@ -50,6 +53,7 @@
 .hero-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 
@@ -57,15 +61,16 @@
   padding: 12px 25px;
   border-radius: 6px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .btn.primary {
-  background: #ffb100;
+  background-color: #ffb100;
   color: #000;
 }
 
 .btn.secondary {
-  background: #ff9800;
+  background-color: #ff9800;
   color: #000;
 }
 
@@ -81,7 +86,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #2d82df;
+  background-color: #2d82df;
   padding: 15px 20px;
   border-radius: 8px;
   min-width: 240px;
@@ -91,7 +96,7 @@
   font-size: 26px;
 }
 
-/* 🔥 LOGO ZONE (SAFE & CENTERED) */
+/* Logos */
 .hero-logos {
   margin-top: 10px;
   display: flex;
@@ -102,238 +107,291 @@
 }
 
 .hero-logos img {
-  height: 60px;           /* 🔥 reduced to prevent overflow */
+  height: 60px;
   width: auto;
   opacity: 0.95;
 }
 
 
-/* About Section */
+/* ================= ABOUT SECTION ================= */
+
 .page-about {
-    /* max-width: 1000px; */
-    margin: 50px;
-    /* margin: 50px auto; */
-    padding: 0 20px;
-    text-align: center;
+  margin: 50px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .page-about h2 {
-    color: rgb(241, 148, 7);
-    font-size: 2rem;
-    margin-bottom: 20px;
+  color: rgb(241, 148, 7);
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .page-about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 .about-button {
-    display: inline-block;
-    background-color: #f8ab05;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
+  display: inline-block;
+  background-color: #f8ab05;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
+
 .about-button:hover {
-    background-color: #da9501;
+  background-color: #da9501;
 }
-/* Call for Papers */
+
+
+/* ================= CALL FOR PAPERS ================= */
+
 .call-for-paper {
-    background-color: #05579e;
-    color: #fff;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #05579e;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .call-for-paper h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .call-for-paper p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
-/* Speaker Section */
+
+/* ================= SPEAKER SECTION ================= */
+
 .speaker-section {
-    /* background-color: #ffffff; */
-    border-radius: 5px;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 .speaker-section h2 {
-    color: rgb(241, 148, 7);
-    font-size: 30px;
-    margin-bottom: 25px;
-    text-align: center;
+  color: rgb(241, 148, 7);
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .speaker-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .speaker-card {
-    background-color: #f59506;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  background-color: #f59506;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .speaker-card:hover {
-    background-color: #000;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .speaker-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .speaker-info h3 {
-    margin: 10px 0 5px;
-    font-size: 1.1rem;
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
 }
 
-.speaker-info:hover {
-    color: #fff;
-}
 .speaker-info h4 {
-    font-size: 0.9rem;
-    color: #fdfcfc;
-    padding: 0 10px 10px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  padding-bottom: 10px;
 }
 
-/* Gallery */
+
+/* ================= GALLERY ================= */
+
 .gallery {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    
-}
-
-.gallery div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-.gallery img {
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .gallery h2 {
-    color: rgb(241, 148, 7);
-    font-size: 30px;
-    margin-bottom: 25px;
+  color: rgb(241, 148, 7);
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
+.gallery div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ================= PROMOTIONAL PARTNERS ================= */
+
 .promotional-partner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
-    background-color: #f8f9fb; /* optional */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f8f9fb;
 }
 
 .promotional-partner h2 {
-    color: rgb(241, 148, 7);
-    font-size: 30px;
-    margin-bottom: 25px;
+  color: rgb(241, 148, 7);
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
-/* Logo container */
 .sponsor-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* Logo image */
 .sponsor-logos img {
-    width: 180px;              /* ✅ controls size */
-    height: auto;
-    padding: 12px;
-    background-color: #fff;    /* clean card look */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+  width: 180px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
 .sponsor-logos img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 
-/* Section wrapper */
+/* ================= NEWS TICKER ================= */
+
 .news-section {
   width: 100%;
-  background-color: #0f172a; /* dark blue-gray */
-  position: relative;
-  z-index: 10;
+  background-color: #0f172a;
 }
 
-/* Ticker container (bigger bar) */
 .news-ticker {
-  width: 100%;
-  height: 56px;                 /* increased height */
-  overflow: hidden;
+  height: 56px;
   display: flex;
   align-items: center;
+  overflow: hidden;
   border-bottom: 1px solid #1e293b;
 }
 
-/* Moving content (slower animation) */
 .ticker-wrapper {
-  display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  animation: ticker-scroll 40s linear infinite;  /* slower */
+  animation: ticker-scroll 40s linear infinite;
 }
 
-/* Text styling (slightly bigger text) */
 .ticker-wrapper span {
-  font-size: 17px;              /* increased font size */
+  font-size: 17px;
   font-weight: 500;
   color: #f8fafc;
 }
 
-/* Smooth animation */
+.news-ticker:hover .ticker-wrapper {
+  animation-play-state: paused;
+}
+
 @keyframes ticker-scroll {
-  0% {
+  from {
     transform: translateX(0%);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
 
-/* Pause animation on hover */
-.news-ticker:hover .ticker-wrapper {
-  animation-play-state: paused;
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: auto;
+    padding: 90px 16px 40px;
+  }
+
+  .hero-content {
+    gap: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content h2 {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .info-card {
+    max-width: 280px;
+    padding: 12px 16px;
+  }
+
+  .hero-logos img {
+    height: 42px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 15px;
+  }
+
+  .hero-logos img {
+    height: 38px;
+  }
 }
